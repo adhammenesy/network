@@ -1,0 +1,205 @@
+body{
+    background-image: url(../imgs/bgi.jpg);
+    background-position: fixed;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+}
+/*NAV BAR*/
+nav {
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    top: 15; 
+    position: fixed;
+    padding-block: 5px;
+    width: 85%;
+    z-index: 10000;
+    margin-inline: 7.5%;
+    border-radius: 15px; 
+  }
+  
+  
+  
+  .logo,.logo a{
+    display: flex;
+    justify-content: center;
+    margin-block: auto;
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgba(47, 0, 255, 0.966);
+    font-size: 20px;
+  }
+  
+  .a ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+  }
+  
+  .a li {
+    margin-inline: 10px;
+  }
+  .a a{
+    text-decoration: none;
+    color:#f84d04;
+    transition: .2s all ease-in-out;
+  }
+  
+  .a a:hover {
+    color: rgba(5, 4, 7, 0.966);
+  }
+  
+  
+    #services h1 {
+      text-align: center;
+      color: aqua;
+    }
+  
+    .logo:hover {
+      color: rgb(0, 255, 76);
+    }
+  
+    .logo {
+      transition: .7s;
+    }
+  
+    .searchNav{
+        width: 350px;
+        height: 50px;
+        background-color: #e59461;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        transition: .7s all ease-in-out;
+        text-align: center;
+      }
+    
+      .searchNav:hover{
+        padding: 20px;
+        font-size: 15px;
+      }
+      #service:hover{
+        padding: 20px;
+        
+        border-right: 10px solid rgba(236, 93, 45, 0.945);
+      }
+      /*empty*/
+      .empty {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+      }
+      
+      .empty span {
+        color: rgba(47, 0, 255, 0.966);
+      }
+
+      .amnss {
+        background-color: #0720fe89;
+      }
+
+      .amnss a {
+        color: white !important;
+        text-decoration: none;
+      }
+      /*aboutus*/
+      .aboutus {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+      }
+
+      .aboutus h1 {
+        flex-direction: column;
+        text-align: center;
+        margin-left: -200px;
+      }
+
+      .aboutus p {
+        width: 100vh;
+        text-align: center;
+        color: rgb(253, 199, 199);
+        margin-left: 250px;
+      }
+      /*services*/
+      .servicesDiv {
+        display: flex;
+      }
+
+      .card {
+        margin-left: 200px;
+        position: relative;
+        width: 190px;
+        height: 254px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        gap: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: white;
+        justify-content: end;
+      }
+      
+      .card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        left: -5px;
+        margin: auto;
+        width: 200px;
+        height: 264px;
+        border-radius: 10px;
+        background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+        z-index: -10;
+        pointer-events: none;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      
+      .card::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+        transform: translate3d(0, 0, 0) scale(0.95);
+        filter: blur(20px);
+      }
+      
+      .heading {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+      
+      .card p:not(.heading) {
+        font-size: 14px;
+      }
+      
+      .card p:last-child {
+        color: #e81cff;
+        font-weight: 600;
+      }
+      
+      .card:hover::after {
+        filter: blur(30px);
+      }
+      
+      .card:hover::before {
+        transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+      }      
+
+      .ion {
+        color: rgb(5, 41, 246);
+        font-size: 60px;
+        margin-left: 30%;
+      }
